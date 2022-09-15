@@ -1,0 +1,61 @@
+import styled, { css } from "styled-components";
+
+export const Menu = styled.div`
+
+    display: none;
+    cursor: pointer;
+
+    div{
+        width: 30px;
+        height: 5px;
+        background-color: #263238;
+        margin: 5px;
+        border-radius: 25px;
+    }
+
+    @media (max-width: 999px){
+        display: block;
+    }
+`;
+
+export const MenuList = styled.ul`
+
+    list-style: none;
+    display: flex ;
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    width: 50vw;
+    min-height: 90vh;
+    background-color: whitesmoke;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+    overflow-x: hidden;
+
+    transition: 0.8s;
+
+    li {
+        margin-left: 0;
+        letter-spacing: 3px;
+    }
+
+    a{
+        text-decoration: none;
+        color: 
+        #263238;
+        font-size: 1.2rem;
+    }
+
+    ${({ visible }) => visible && css `
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(0);
+        backdrop-filter: blur(80%);
+    `}
+`;
