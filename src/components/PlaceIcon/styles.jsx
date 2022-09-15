@@ -6,8 +6,11 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     width: 100px;
-    background-color: white;
-    margin-top: 40px;
+    margin-left: 3vw;
+    
+    @media (max-width: 999px){
+        word-break: break-all;
+    }
 `;
 
 export const Icon = styled.div`
@@ -18,11 +21,18 @@ export const Icon = styled.div`
     width: 10vh;
     border-radius: 50%;
     background-color: whitesmoke;
+    color: black;
 `;
 
 export const Place = styled.a`
 
     text-decoration: none;
+    color: #263238;
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    
+    @media (max-width: 999px){
+        font-size: 0.8rem;
+    }
 `;

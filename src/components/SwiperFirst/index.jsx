@@ -1,6 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Controller, FreeMode } from "swiper";
 import 'swiper/css';
+import 'swiper/css/free-mode'
+
+import { SwiperDiv, Fixed } from './styles';
 
 import PlaceIcon from '../PlaceIcon';
 
@@ -10,31 +14,52 @@ import { AiOutlineMedicineBox } from 'react-icons/ai'
 const SwiperFirst = () => {
 
     return(
-        <Swiper>
-        <SwiperSlide>
-          <PlaceIcon img = <AiOutlineMedicineBox size={50}/> text = 'Farmácias'/>
-        </SwiperSlide>
+      <>
+        <SwiperDiv>
+          <Swiper 
+            freeMode={true}
+            grabCursor={true}
+            modules={[FreeMode][Controller]}
+            slidesPerView={3.5}
+            spaceBetween={20}
+            >
+            <SwiperSlide>
+              <PlaceIcon img = <AiOutlineMedicineBox size={40}/> text = 'Farmácias'/>
+            </SwiperSlide>
 
-        <SwiperSlide>
+            <SwiperSlide>
+              <PlaceIcon text = 'Bares'/>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <PlaceIcon  text = 'Restaurantes'/>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <PlaceIcon text = 'Mercados'/>
+            </SwiperSlide>
+            
+            <SwiperSlide>
+              <PlaceIcon />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <PlaceIcon />
+            </SwiperSlide>
+          </Swiper>
+        </SwiperDiv>
+
+        <Fixed>
+
+          <PlaceIcon img = <AiOutlineMedicineBox size={40}/> text = 'Farmácias'/>
           <PlaceIcon text = 'Bares'/>
-        </SwiperSlide>
-
-        <SwiperSlide>
           <PlaceIcon  text = 'Restaurantes'/>
-        </SwiperSlide>
-
-        <SwiperSlide>
           <PlaceIcon text = 'Mercados'/>
-        </SwiperSlide>
-        
-        <SwiperSlide>
           <PlaceIcon />
-        </SwiperSlide>
+          <PlaceIcon />
 
-        <SwiperSlide>
-          <PlaceIcon />
-        </SwiperSlide>
-      </Swiper>
+        </Fixed>
+      </>
     )
 }
 

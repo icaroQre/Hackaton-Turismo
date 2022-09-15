@@ -24,3 +24,18 @@ export const Bar = styled.input`
         padding: 50px;
     }
 `;
+
+export const Btn = styled.button`
+    margin-right: 20px;
+    position: absolute;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background-color: white;
+`;
+
+export const ExploreBar = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: end;
+`;

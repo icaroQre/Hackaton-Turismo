@@ -1,11 +1,16 @@
 import React from "react";
-import { Bar } from "./styles";
+import { Bar,Btn,ExploreBar } from "./styles";
+
+import { FaSearch } from 'react-icons/fa';
 
 const Explore = () => {
 
     return (
         <>
-            <Bar type="text" placeholder="" />
+            <ExploreBar>
+                <Bar type="text"/>
+                <Btn><FaSearch size={25} /></Btn>
+            </ExploreBar>
         </>
     )
 }

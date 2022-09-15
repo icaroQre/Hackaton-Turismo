@@ -21,6 +21,8 @@ export const NavList = styled.ul`
 
     list-style: none;
     display: flex ;
+    align-items: center;
+    justify-content: center;
 
     li{
         letter-spacing: 2px;
@@ -29,7 +31,7 @@ export const NavList = styled.ul`
 
     a{
         text-decoration: none;
-        color: #696969;
+        color: #263238;
         font-size: 1.2rem;
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
@@ -46,4 +48,19 @@ export const Name = styled.p`
     font-weight: 700;
     font-size: 25px;
 
+`;
+
+export const Cadastrar = styled.li`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    background-color: #1F75FE;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    a{ 
+        color: white;
+    }
 `;
