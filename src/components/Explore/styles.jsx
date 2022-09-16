@@ -13,16 +13,22 @@ export const Bar = styled.input`
     height: 8vh;
     max-height: 50px;
     border-radius: 15px;
-    font-size: 3.5vh;
+    font-size: 3vh;
     font-family: 'Maven Pro', sans-serif;
     font-weight: Bold;
     padding-left: 6.5px;
+    padding-left: 25px;
 
     ::placeholder{
         font-family: 'Maven Pro', sans-serif;
-        font-weight: 600;
-        font-size: 2rem;
-        padding: 50px;
+        font-weight: bold;
+        font-size: 3vh;
+    }
+
+    @media (max-width: 999px){
+        ::placeholder{
+            font-size: 3.5vh;
+            }
     }
 `;
 
@@ -32,7 +38,7 @@ export const Btn = styled.button`
     outline: none;
     border: none;
     text-decoration: none;
-    background-color: white;
+    background-color: transparent;
 `;
 
 export const ExploreBar = styled.div`

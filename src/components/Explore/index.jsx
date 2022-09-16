@@ -8,8 +8,8 @@ const Explore = () => {
     return (
         <>
             <ExploreBar>
-                <Bar type="text"/>
-                <Btn><FaSearch size={25} /></Btn>
+                <Bar type="text" placeholder="Onde quer ir?"/>
+                <Btn><FaSearch size={20} /></Btn>
             </ExploreBar>
         </>
     )

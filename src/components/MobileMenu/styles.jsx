@@ -50,6 +50,7 @@ export const MenuList = styled.ul`
         color: 
         #263238;
         font-size: 1.2rem;
+        font-family: 'Maven Pro', sans-serif;
     }
 
     ${({ visible }) => visible && css `

@@ -5,10 +5,11 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    text-align: center;
+    width: 90px;
     
     @media (max-width: 999px){
-        word-break: break-all;
+        word-break: inherit;
         margin-left: 1vw;
     }
 `;
@@ -31,8 +32,4 @@ export const Place = styled.a`
     font-weight: 900;
     font-family: 'Maven Pro', sans-serif;
     margin-top: 15px;
-    
-    @media (max-width: 999px){
-        font-size: 0.8rem;
-    }
 `;
