@@ -9,7 +9,10 @@ import { SwiperDiv, Fixed } from './styles';
 import PlaceIcon from '../PlaceIcon';
 
 //ICONES
-import { AiOutlineMedicineBox } from 'react-icons/ai'
+import { AiFillMedicineBox } from 'react-icons/ai'
+import { IoMdRestaurant, IoMdBeer } from 'react-icons/io'
+import { FaChurch, FaMapMarkedAlt } from 'react-icons/fa'
+import { BsFillBasket2Fill } from 'react-icons/bs'
 
 const SwiperFirst = () => {
 
@@ -21,42 +24,42 @@ const SwiperFirst = () => {
             grabCursor={true}
             modules={[FreeMode][Controller]}
             slidesPerView={3.5}
-            spaceBetween={20}
+            spaceBetween={15}
             >
             <SwiperSlide>
-              <PlaceIcon img = <AiOutlineMedicineBox size={40}/> text = 'Farmácias'/>
+              <PlaceIcon img = <AiFillMedicineBox size={35}/> text = 'Farmácias'/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <PlaceIcon text = 'Bares'/>
+              <PlaceIcon img = <IoMdRestaurant size={35}/> text = 'Restaurantes'/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <PlaceIcon  text = 'Restaurantes'/>
+              <PlaceIcon img = <FaMapMarkedAlt size={35}/> text = 'Pontos turísticos'/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <PlaceIcon text = 'Mercados'/>
+              <PlaceIcon  img = <FaChurch size={35}/> text = 'Igrejas'/>
             </SwiperSlide>
             
             <SwiperSlide>
-              <PlaceIcon />
+              <PlaceIcon img = <BsFillBasket2Fill size={35}/> text = 'Mercados'/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <PlaceIcon />
+              <PlaceIcon img = <IoMdBeer size={35}/> text = 'Bares'/>
             </SwiperSlide>
           </Swiper>
         </SwiperDiv>
 
         <Fixed>
 
-          <PlaceIcon img = <AiOutlineMedicineBox size={40}/> text = 'Farmácias'/>
-          <PlaceIcon text = 'Bares'/>
-          <PlaceIcon  text = 'Restaurantes'/>
-          <PlaceIcon text = 'Mercados'/>
-          <PlaceIcon />
-          <PlaceIcon />
+          <PlaceIcon img = <AiFillMedicineBox size={35}/> text = 'Farmácias'/>
+          <PlaceIcon img = <IoMdRestaurant size={35}/> text = 'Restaurantes'/>
+          <PlaceIcon img = <FaMapMarkedAlt size={35}/> text = 'Pontos turísticos'/>
+          <PlaceIcon  img = <FaChurch size={35}/> text = 'Igrejas'/>
+          <PlaceIcon img = <BsFillBasket2Fill size={35}/> text = 'Mercados'/>
+          <PlaceIcon img = <IoMdBeer size={35}/> text = 'Bares'/>
 
         </Fixed>
       </>

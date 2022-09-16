@@ -20,18 +20,18 @@ export const Menu = styled.div`
 
 export const MenuList = styled.ul`
 
-    list-style: none;
     display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
     position: absolute;
     top: 12vh;
     right: 0;
     width: 50vw;
-    min-height: 90vh;
+    min-height: 88vh;
     background-color: whitesmoke;
     margin: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     z-index: 5;
     opacity: 0;
     pointer-events: none;
@@ -53,6 +53,10 @@ export const MenuList = styled.ul`
     }
 
     ${({ visible }) => visible && css `
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
         opacity: 1;
         pointer-events: auto;
         transform: translateX(0);

@@ -6,10 +6,10 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     width: 100px;
-    margin-left: 3vw;
     
     @media (max-width: 999px){
         word-break: break-all;
+        margin-left: 1vw;
     }
 `;
 

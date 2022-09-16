@@ -26,7 +26,7 @@ export const NavList = styled.ul`
 
     li{
         letter-spacing: 2px;
-        margin-left: 32px ;
+        margin-left: 30px;
     }
 
     a{
