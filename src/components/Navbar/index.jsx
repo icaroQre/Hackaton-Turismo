@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import {Header, Logo, NavList, Name, Cadastrar } from './styles';
 import MobileMenu from "../MobileMenu";
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -15,10 +16,10 @@ const Navbar = () => {
             menuVisible = {menuVisible}
             setMenuVisible = {setMenuVisible} />
             <NavList>
-                <li><a href="/">Cidades</a></li>
-                <li><a href="/">Sobre nós</a></li>
-                <li><a href="/">Entrar</a></li>
-                <Cadastrar><a href="/">Cadastrar</a></Cadastrar>
+                <li><Link to="/">Cidades</Link></li>
+                <li><Link to="/">Sobre nós</Link></li>
+                <li><Link to="/login">Entrar</Link></li>
+                <Cadastrar><Link to="/">Cadastrar</Link></Cadastrar>
             </NavList>
         </Header>
     )

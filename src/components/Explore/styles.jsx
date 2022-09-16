@@ -13,12 +13,13 @@ export const Bar = styled.input`
     height: 8vh;
     max-height: 50px;
     border-radius: 15px;
-    font-size: 5vh;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
+    font-size: 3.5vh;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: Bold;
+    padding-left: 6.5px;
 
     ::placeholder{
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Maven Pro', sans-serif;
         font-weight: 600;
         font-size: 2rem;
         padding: 50px;

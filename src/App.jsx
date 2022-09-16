@@ -1,17 +1,20 @@
 import React from "react";
-import Navbar from './components/Navbar';
-import PrincipalSection from './components/PrincipalSection'
-import SwiperFirst from "./components/SwiperFirst";
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Login from './Pages/Login/Login';
+import Home from './Pages/Home/Home';
 
-import 'swiper/css';
+
+
+
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <PrincipalSection />
-      <SwiperFirst />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element = {<Home/>} />
+        <Route exact path="/login" element = {<Login/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

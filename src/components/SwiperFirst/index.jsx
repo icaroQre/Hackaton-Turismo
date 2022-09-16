@@ -1,8 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Controller, FreeMode } from "swiper";
-import 'swiper/css';
-import 'swiper/css/free-mode'
+import { Controller, FreeMode } from 'swiper';
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
 
 import { SwiperDiv, Fixed } from './styles';
 

@@ -29,7 +29,7 @@ export const Place = styled.a`
     text-decoration: none;
     color: #263238;
     font-weight: 900;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     margin-top: 15px;
     
     @media (max-width: 999px){

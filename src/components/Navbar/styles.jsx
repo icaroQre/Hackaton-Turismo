@@ -33,7 +33,7 @@ export const NavList = styled.ul`
         text-decoration: none;
         color: #263238;
         font-size: 1.2rem;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Maven Pro', sans-serif;
         font-weight: 900;
     }
 
