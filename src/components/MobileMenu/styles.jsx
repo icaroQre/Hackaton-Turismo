@@ -36,9 +36,7 @@ export const MenuList = styled.ul`
     opacity: 0;
     pointer-events: none;
     transform: translateX(100%);
-    overflow-x: hidden;
-
-    transition: 0.8s;
+    transition: 0.5s;
 
     li {
         margin-left: 0;
