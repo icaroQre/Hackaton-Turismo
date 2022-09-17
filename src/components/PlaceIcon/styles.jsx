@@ -10,7 +10,7 @@ export const Container = styled.div`
     
     @media (max-width: 999px){
         word-break: inherit;
-        margin-left: 0.9vw;
+        margin-left: 10vw;
     }
 `;
 

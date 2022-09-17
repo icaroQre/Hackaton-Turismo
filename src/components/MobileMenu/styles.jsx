@@ -4,6 +4,7 @@ export const Menu = styled.div`
 
     display: none;
     cursor: pointer;
+    margin-right: 10vw;
 
     div{
         width: 30px;
@@ -48,8 +49,9 @@ export const MenuList = styled.ul`
         text-decoration: none;
         color: 
         #263238;
-        font-size: 1.2rem;
+        font-size: clamp(0.5rem, 1rem + 1vh, 2vh);
         font-family: 'Maven Pro', sans-serif;
+        font-weight: bold;
     }
 
     ${({ visible }) => visible && css `

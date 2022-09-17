@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import logo from '../images/logo.png'
 
 export const Header = styled.div`
     height: 12vh;
@@ -6,16 +7,23 @@ export const Header = styled.div`
     max-width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
     z-index: 5;
 `;
 
 export const Logo = styled.div`
-    height: 7vh;
-    width: 7vh;
-    background-color: blue;
-    border-radius: 50px;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 100px;
+    overflow: hidden;
+    background-image: url(${logo});
+    background-size: 10vh;
+    margin-left: 10vw;
+
+    @media(max-width: 999px){
+        margin-left: 1.5vw;
+    }
 `;
 
 export const NavList = styled.ul`
@@ -24,6 +32,7 @@ export const NavList = styled.ul`
     display: flex ;
     align-items: center;
     justify-content: center;
+    margin-right: 10vw;
 
     li{
         letter-spacing: 2px;
