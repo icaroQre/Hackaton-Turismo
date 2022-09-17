@@ -7,7 +7,7 @@ import LoginButtons from "./LoginButtons";
 const Login = () => {
   return (
     <div>
-      <h1 style={{textAlign: 'center', fontSize: '60px', marginTop: '90px', marginBottom:'50px', fontFamily: 'Maven Pro',}}>LOGO</h1>
+      <h1 style={{textAlign: 'center', fontSize: '60px', marginTop: '20vh', marginBottom:'auto', fontFamily: 'Maven Pro',}}>LOGO</h1>
       <Conteiner/>
       <LoginButtons/>
       <GlobalStyles/>

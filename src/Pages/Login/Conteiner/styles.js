@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     max-width: 1120px;
-    margin: 20px auto;
+    margin-top: 10vh;
     width: 100%;
     background-color: #fff;
     border-radius: 5px;
@@ -16,6 +16,7 @@ export const Container = styled.div`
 export const InputContent = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
 `;
 
 export const Input = styled.input`
@@ -27,14 +28,20 @@ export const Input = styled.input`
     color: #363636;
     outline: none;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     box-shadow: 1px 3px 4px 2px #ccc;
+
+    @media(max-width: 999px){
+        height: 2vh;
+        width: 40vw;
+    }
 `;
 
 export const Label = styled.label`
     color: #363636;
     font-family: 'Maven Pro', sans-serif;
     font-weight: bold;
+    margin-bottom: 15px;
 `;
 
 export const Button = styled.button`
@@ -54,6 +61,11 @@ export const Button = styled.button`
     &:active{
         box-shadow: 0px 0px 0px 0px #ccc, inset 1px 3px 4px 2px #ccc;
         transform: translate(3px,3px);
+    }
+
+    @media(max-width: 999px){
+        height: 4vh;
+        width: 30vw;
     }
 `;
 
