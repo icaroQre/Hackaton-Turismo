@@ -22,12 +22,12 @@ export const InputContent = styled.div`
 export const Input = styled.input`
     border-radius: 10px;
     padding: 10px 15px;
-    font-size: 15px;
+    font-size: clamp(0.5rem, 1rem + 1vh, 1.5vh);
     font: "Montserrat";
     font-weight: bold;
     color: #363636;
     outline: none;
-    border: none;
+    border: solid #E0E0E0 2px;
     margin-bottom: 50px;
     box-shadow: 1px 3px 4px 2px #ccc;
 
@@ -41,13 +41,14 @@ export const Label = styled.label`
     color: #363636;
     font-family: 'Maven Pro', sans-serif;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 1.8vh;
+    font-size: clamp(0.5rem, 1rem + 1vh, 2.8vh);
 `;
 
 export const Button = styled.button`
     margin-top: 10px;
     padding: 15px 90px;
-    font-size: 30px;
+    font-size: clamp(0.5rem, 1rem + 1vh, 3vh);
     font-weight: bold;
     border: none;
     border-radius: 10px;
@@ -57,6 +58,8 @@ export const Button = styled.button`
     box-shadow: 1px 3px 4px 2px #ccc;
     text-shadow: 1px 1px 1px #ccc;
     transition: all ease 0.05s;
+    margin-bottom: 1.5vh;
+    font-family: 'Maven Pro', sans-serif;
 
     &:active{
         box-shadow: 0px 0px 0px 0px #ccc, inset 1px 3px 4px 2px #ccc;
@@ -73,6 +76,8 @@ export const Button = styled.button`
 export const Escrito = styled.span`
     font-weight: bold;
     color: #ACACAC;
+    font-size: clamp(0.5rem, 1rem + 1vh, 1.5vh);
+    font-family: 'Maven Pro', sans-serif;
 `;
 
 export const a = styled.a`

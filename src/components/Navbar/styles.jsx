@@ -47,7 +47,7 @@ export const Name = styled.p`
     color: #101010;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 25px;
+    font-size: clamp(1vh + 0.5rem, 1rem + 2vh, 4vh);
 
 `;
 

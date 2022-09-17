@@ -32,4 +32,5 @@ export const Place = styled.a`
     font-weight: 900;
     font-family: 'Maven Pro', sans-serif;
     margin-top: 15px;
+    font-size: clamp(0.5rem, 1rem + 1vh, 2vh);
 `;

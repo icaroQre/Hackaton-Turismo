@@ -6,28 +6,25 @@ export const Bar = styled.input`
 
     border: 0 none;
     outline: 0;
-    display: flex;
-    align-items: center;
     width: 70vw;
     max-width: 700px;
-    height: 8vh;
+    height: 6vh;
     max-height: 50px;
     border-radius: 15px;
-    font-size: 3vh;
+    font-size: clamp(0.5rem, 1rem + 1vh, 2.5vh);
     font-family: 'Maven Pro', sans-serif;
     font-weight: Bold;
-    padding-left: 6.5px;
-    padding-left: 25px;
+    padding: 8px 30px 14px;;
 
     ::placeholder{
         font-family: 'Maven Pro', sans-serif;
         font-weight: bold;
-        font-size: 3vh;
+        font-size: clamp(0.5rem, 1rem + 1vh, 2.5vh);
     }
 
     @media (max-width: 999px){
         ::placeholder{
-            font-size: 3.5vh;
+            font-size: clamp( 1vh, 3vh);
             }
     }
 `;
