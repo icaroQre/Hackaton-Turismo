@@ -13,10 +13,9 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`    
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    margin-left: 20px;
+    width: 5vh;
+    height: 5vh;
+    margin: 3vh;
     border: none;
     border-radius: 50%;
     cursor: pointer;

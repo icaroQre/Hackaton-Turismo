@@ -30,6 +30,8 @@ export const Input = styled.input`
     border: solid #E0E0E0 2px;
     margin-bottom: 50px;
     box-shadow: 1px 3px 4px 2px #ccc;
+    height: 2vh;
+    width: 15vw;
 
     @media(max-width: 999px){
         height: 2vh;
@@ -45,21 +47,56 @@ export const Label = styled.label`
     font-size: clamp(0.5rem, 1rem + 1vh, 2.8vh);
 `;
 
-export const Button = styled.button`
+export const ButtonLogin = styled.button`
     margin-top: 10px;
-    padding: 15px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: clamp(0.5rem, 1rem + 1vh, 3vh);
     font-weight: bold;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #FEC200;
+    background-color: #1F75FE;
     color: white;
     box-shadow: 1px 3px 4px 2px #ccc;
     text-shadow: 1px 1px 1px #ccc;
     transition: all ease 0.05s;
     margin-bottom: 1.5vh;
     font-family: 'Maven Pro', sans-serif;
+    height: 4vh;
+    width: 10vw;
+
+    &:active{
+        box-shadow: 0px 0px 0px 0px #ccc, inset 1px 3px 4px 2px #ccc;
+        transform: translate(3px,3px);
+    }
+
+    @media(max-width: 999px){
+        height: 4vh;
+        width: 30vw;
+    }
+`;
+
+export const ButtonSingin = styled.button`
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.5rem, 1rem + 1vh, 3vh);
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 1px 3px 4px 2px #ccc;
+    text-shadow: 1px 1px 1px #ccc;
+    transition: all ease 0.05s;
+    margin-bottom: 1.5vh;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #fec200;
+    height: 6vh;
+    width: 10vw;
 
     &:active{
         box-shadow: 0px 0px 0px 0px #ccc, inset 1px 3px 4px 2px #ccc;
@@ -75,8 +112,8 @@ export const Button = styled.button`
 
 export const Escrito = styled.span`
     font-weight: bold;
-    color: #ACACAC;
-    font-size: clamp(0.5rem, 1rem + 1vh, 1.5vh);
+    color: #101010;
+    font-size: clamp(0.5rem, 1rem + 1vh, 2.5vh);
     font-family: 'Maven Pro', sans-serif;
 `;
 
@@ -88,4 +125,8 @@ export const a = styled.a`
 
 export const button_holder = styled.a`
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `;
