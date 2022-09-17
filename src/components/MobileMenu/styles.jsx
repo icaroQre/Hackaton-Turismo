@@ -15,12 +15,13 @@ export const Menu = styled.div`
 
     @media (max-width: 999px){
         display: block;
+
     }
 `;
 
 export const MenuList = styled.ul`
 
-    display: flex ;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -28,15 +29,15 @@ export const MenuList = styled.ul`
     position: absolute;
     top: 12vh;
     right: 0;
-    width: 50vw;
+    width: 0;
     min-height: 88vh;
     background-color: whitesmoke;
     margin: 0;
     z-index: 5;
     opacity: 0;
     pointer-events: none;
-    transform: translateX(100%);
     transition: 0.5s;
+    overflow-x: hidden;
 
     li {
         margin-left: 0;
@@ -58,7 +59,6 @@ export const MenuList = styled.ul`
         justify-content: space-around;
         opacity: 1;
         pointer-events: auto;
-        transform: translateX(0);
-        backdrop-filter: blur(80%);
+        width: 50vw;
     `}
 `;

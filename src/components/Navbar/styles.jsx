@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Header = styled.div`
     height: 12vh;
-    min-width: 100vw;
+    min-width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
