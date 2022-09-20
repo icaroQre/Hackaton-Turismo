@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from '../../components/Navbar';
 import PrincipalSection from '../../components/PrincipalSection';
+import SecondSection from "../../components/SecondSection";
 import SwiperFirst from "../../components/SwiperFirst";
 import GlobalStyles from '../../styles/GlobalStyles';
 import Reset from '../../styles/Reset';

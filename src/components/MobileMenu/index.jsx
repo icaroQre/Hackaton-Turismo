@@ -19,7 +19,7 @@ const MobileMenu = ({ menuVisible, setMenuVisible }) => {
                 <li><a href="/">Cidades</a></li>
                 <li><a href="/">Sobre nós</a></li>
                 <li><a href="/login">Entrar</a></li>
-                <li><a href="/">Cadastrar</a></li>
+                <li><a href="/register">Cadastrar</a></li>
             </MenuList>
         </>
     )

@@ -19,7 +19,7 @@ const Navbar = () => {
                 <li><Link to="/">Cidades</Link></li>
                 <li><Link to="/">Sobre nós</Link></li>
                 <li><Link to="/login">Entrar</Link></li>
-                <Cadastrar><Link to="/">Cadastrar</Link></Cadastrar>
+                <Cadastrar><Link to="/register">Cadastrar</Link></Cadastrar>
             </NavList>
         </Header>
     )
