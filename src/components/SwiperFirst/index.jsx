@@ -27,39 +27,39 @@ const SwiperFirst = () => {
             spaceBetween={15}
             >
             <SwiperSlide>
-              <PlaceIcon img = <AiFillMedicineBox size={35}/> text = 'Farmácias'/>
+              <PlaceIcon img = "https://static3.depositphotos.com/1000746/134/i/450/depositphotos_1348386-stock-photo-ok-hand-sign-silhouette.jpg" text = 'Farmácias'/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <PlaceIcon img = <IoMdRestaurant size={35}/> text = 'Restaurantes'/>
+              <PlaceIcon img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIuRkWY-iMfkQw0a_KkerL80e-NJQMh8VUaLBUjnkotquuhkJfyH1UH4q7VJ6qPjiiBE&usqp=CAU" text = 'Restaurantes'/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <PlaceIcon img = <FaMapMarkedAlt size={35}/> text = 'Pontos turísticos'/>
+              <PlaceIcon img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIuRkWY-iMfkQw0a_KkerL80e-NJQMh8VUaLBUjnkotquuhkJfyH1UH4q7VJ6qPjiiBE&usqp=CAU" text = 'Pontos turísticos'/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <PlaceIcon  img = <FaChurch size={35}/> text = 'Igrejas'/>
+              <PlaceIcon  img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIuRkWY-iMfkQw0a_KkerL80e-NJQMh8VUaLBUjnkotquuhkJfyH1UH4q7VJ6qPjiiBE&usqp=CAU" text = 'Igrejas'/>
             </SwiperSlide>
             
             <SwiperSlide>
-              <PlaceIcon img = <BsFillBasket2Fill size={35}/> text = 'Mercados'/>
+              <PlaceIcon img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIuRkWY-iMfkQw0a_KkerL80e-NJQMh8VUaLBUjnkotquuhkJfyH1UH4q7VJ6qPjiiBE&usqp=CAU" text = 'Mercados'/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <PlaceIcon img = <IoMdBeer size={35}/> text = 'Bares'/>
+              <PlaceIcon img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIuRkWY-iMfkQw0a_KkerL80e-NJQMh8VUaLBUjnkotquuhkJfyH1UH4q7VJ6qPjiiBE&usqp=CAU" text = 'Bares'/>
             </SwiperSlide>
           </Swiper>
         </SwiperDiv>
 
         <Fixed>
 
-          <PlaceIcon img = <AiFillMedicineBox size={35}/> text = 'Farmácias'/>
-          <PlaceIcon img = <IoMdRestaurant size={35}/> text = 'Restaurantes'/>
-          <PlaceIcon img = <FaMapMarkedAlt size={35}/> text = 'Pontos turísticos'/>
-          <PlaceIcon  img = <FaChurch size={35}/> text = 'Igrejas'/>
-          <PlaceIcon img = <BsFillBasket2Fill size={35}/> text = 'Mercados'/>
-          <PlaceIcon img = <IoMdBeer size={35}/> text = 'Bares'/>
+          <PlaceIcon img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIuRkWY-iMfkQw0a_KkerL80e-NJQMh8VUaLBUjnkotquuhkJfyH1UH4q7VJ6qPjiiBE&usqp=CAU" text = 'Farmácias'/>
+          <PlaceIcon img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIuRkWY-iMfkQw0a_KkerL80e-NJQMh8VUaLBUjnkotquuhkJfyH1UH4q7VJ6qPjiiBE&usqp=CAU" text = 'Restaurantes'/>
+          <PlaceIcon img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIuRkWY-iMfkQw0a_KkerL80e-NJQMh8VUaLBUjnkotquuhkJfyH1UH4q7VJ6qPjiiBE&usqp=CAU" text = 'Pontos turísticos'/>
+          <PlaceIcon  img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIuRkWY-iMfkQw0a_KkerL80e-NJQMh8VUaLBUjnkotquuhkJfyH1UH4q7VJ6qPjiiBE&usqp=CAU" text = 'Igrejas'/>
+          <PlaceIcon img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIuRkWY-iMfkQw0a_KkerL80e-NJQMh8VUaLBUjnkotquuhkJfyH1UH4q7VJ6qPjiiBE&usqp=CAU" text = 'Mercados'/>
+          <PlaceIcon img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIuRkWY-iMfkQw0a_KkerL80e-NJQMh8VUaLBUjnkotquuhkJfyH1UH4q7VJ6qPjiiBE&usqp=CAU" text = 'Bares'/>
 
         </Fixed>
       </>

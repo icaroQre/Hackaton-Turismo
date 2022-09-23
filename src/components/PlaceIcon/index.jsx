@@ -1,15 +1,15 @@
 import React from "react";
 import { Icon, Place, Container } from './styles';
 
-const PlaceIcon = ({ img, text }) => {
+const PlaceIcon = (props) => {
 
     return (
         <Container>
             <Icon>
-                {img}
+                <img src={props.img} alt="logo" />
             </Icon>
             <Place href="/">
-                {text}
+                {props.text}
             </Place>
         </Container>
     )
