@@ -23,6 +23,7 @@ export const Icon = styled.div`
     border-radius: 50%;
     background-color: whitesmoke;
     color: black;
+    overflow: hidden;
 `;
 
 export const Place = styled.a`
