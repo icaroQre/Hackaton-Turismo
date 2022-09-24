@@ -15,13 +15,7 @@ function Home() {
       <PrincipalSection />
       <SwiperFirst style={{paddingBottom: "80px",
       borderBottom: "solid #E0E0E0 4px"}}/>
-      <PlacesSection text = "Próximos a você" />
-      <PlacesSection text = "Farmácias" />
-      <PlacesSection text = "Restauranstes" />
-      <PlacesSection text = "Pontos turísticos" />
-      <PlacesSection text = "Igrejas" />
-      <PlacesSection text = "Mercados" />
-      <PlacesSection text = "Bares" />
+      <PlacesSection/>
     </>
   );
 }
