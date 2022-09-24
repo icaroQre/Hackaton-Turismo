@@ -28,7 +28,7 @@ export const MenuList = styled.ul`
     justify-content: space-around;
     list-style: none;
     position: absolute;
-    top: 12vh;
+    top: calc(12vh + 30px);
     right: 0;
     width: 0;
     min-height: 88vh;

@@ -39,12 +39,17 @@ export const NavList = styled.ul`
         margin-left: 30px;
     }
 
-    a{
+    .a{
         text-decoration: none;
         color: #263238;
         font-size: 1.2rem;
         font-family: 'Maven Pro', sans-serif;
         font-weight: 900;
+        transition: all 0.5s;
+
+        :hover{
+            color: #fed300;
+        }
     }
 
     @media (max-width: 999px){
@@ -53,12 +58,15 @@ export const NavList = styled.ul`
 `;
 
 export const Name = styled.p`
-    color: #101010;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: clamp(1vh + 0.5rem, 1rem + 2vh, 4vh);
-    margin-left: 10vw;
 
+    .link{
+        color: #101010;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: clamp(1vh + 0.5rem, 1rem + 2vh, 4vh);
+        margin-left: 10vw;
+        text-decoration: none;
+    }
 `;
 
 export const Cadastrar = styled.li`
@@ -70,8 +78,17 @@ export const Cadastrar = styled.li`
     border-radius: 25px;
     padding-left: 10px;
     padding-right: 10px;
+    transition: all 0.5s;
 
     a{ 
         color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: 900;
+    }
+
+    :hover{
+        background-color: #fed300;
     }
 `;

@@ -24,7 +24,11 @@ export const Icon = styled.div`
     border-radius: 50%;
     background-color: whitesmoke;
     color: black;
-    overflow: hidden;
+    overflow: hidden; 
+
+    img {
+        height: 10vh;
+    }
 `;
 
 export const Place = styled.a`

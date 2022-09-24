@@ -51,7 +51,7 @@ const PlacesSection = ({ text }) => {
 
     return (
         <>
-          <SwiperDiv>
+          <SwiperDiv id="locais">
             <Title>
               Próximos a você
             </Title>
@@ -78,7 +78,7 @@ const PlacesSection = ({ text }) => {
               </Swiper>
             </SwiperDiv>
 
-            <SwiperDiv>    
+            <SwiperDiv id="hoteis">    
             <Title>
               Hoteis
             </Title>
@@ -106,7 +106,7 @@ const PlacesSection = ({ text }) => {
               </Swiper>
             </SwiperDiv>
 
-            <SwiperDiv>
+            <SwiperDiv id="atracoes">
             <Title>
               Atrações
             </Title>
@@ -134,7 +134,7 @@ const PlacesSection = ({ text }) => {
               </Swiper>
             </SwiperDiv>
 
-          <SwiperDiv>
+          <SwiperDiv id="restaurantes">
             <Title>
               Restaurantes
             </Title>
@@ -162,7 +162,7 @@ const PlacesSection = ({ text }) => {
               </Swiper>
             </SwiperDiv>
 
-            <SwiperDiv>
+            <SwiperDiv id="bares">
             <Title>
               Bares
             </Title>
@@ -190,7 +190,7 @@ const PlacesSection = ({ text }) => {
               </Swiper>
             </SwiperDiv>
 
-            <SwiperDiv>
+            <SwiperDiv id="eventos">
             <Title>
               Eventos
             </Title>
@@ -226,7 +226,7 @@ const PlacesSection = ({ text }) => {
 
 
 
-            <FixedContainer>
+            <FixedContainer id="fixed-locais">
              <Title>
               Locais
              </Title>
@@ -248,7 +248,7 @@ const PlacesSection = ({ text }) => {
             </Fixed>
             </FixedContainer>
 
-            <FixedContainer>
+            <FixedContainer id="fixed-hoteis">
             <Title>
               Hoteis
             </Title>
@@ -267,7 +267,7 @@ const PlacesSection = ({ text }) => {
             </Fixed>
             </FixedContainer>
 
-            <FixedContainer>
+            <FixedContainer id="fixed-atracoes">
              <Title>
               Atrações
              </Title>
@@ -287,7 +287,7 @@ const PlacesSection = ({ text }) => {
             </Fixed>
             </FixedContainer>
 
-            <FixedContainer>
+            <FixedContainer id="fixed-restaurantes">
              <Title>
               Restaurantes
              </Title>
@@ -309,7 +309,7 @@ const PlacesSection = ({ text }) => {
             </Fixed>
             </FixedContainer>
 
-            <FixedContainer>
+            <FixedContainer id="fixed-bares">
              <Title>
               Bares
              </Title>
@@ -331,7 +331,7 @@ const PlacesSection = ({ text }) => {
             </Fixed>
             </FixedContainer>
 
-            <FixedContainer>
+            <FixedContainer id="fixed-eventos">
              <Title>
               Eventos
              </Title>
