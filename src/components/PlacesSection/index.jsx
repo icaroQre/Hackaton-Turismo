@@ -1,12 +1,11 @@
 import React, {useState, useEffect}from "react";
-import { Container, Container2 } from "./styles";
 import api from "../../services/api"
 import { Title } from './styles'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Controller, FreeMode } from 'swiper';
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
-import { SwiperDiv, Fixed } from './styles';
+import { SwiperDiv, Fixed, FixedContainer } from './styles';
 import PlaceIcon from '../PlaceIcon';
 
 
@@ -17,6 +16,8 @@ const PlacesSection = ({ text }) => {
     const [restaurantes, setRestaurantes] = useState(false)
     const [atracoes, setAtracoes] = useState(false)
     const [hoteis, setHoteis] = useState(false)
+    const [eventos, setEventos] = useState(false)
+    const [bares, setBares] = useState(false)
 
     useEffect(() => {
     async function GET(endpoint){
@@ -36,16 +37,24 @@ const PlacesSection = ({ text }) => {
         const result = response.data.hoteis;
         setHoteis(result)
       })
+      api.get('/eventos').then((response) => {
+        const result = response.data.eventos;
+        setEventos(result)
+      })
+      api.get('/bares').then((response) => {
+        const result = response.data.bares;
+        setBares(result)
+      })
     }
     GET();
     }, [locais===false])
 
     return (
         <>
+          <SwiperDiv>
             <Title>
               Próximos a você
             </Title>
-            <SwiperDiv>
               <Swiper
                 freeMode={true}
                 grabCursor={true}
@@ -69,64 +78,11 @@ const PlacesSection = ({ text }) => {
               </Swiper>
             </SwiperDiv>
 
-            <Title>
-              Restaurantes
-            </Title>
-            <SwiperDiv>
-            <Swiper
-                freeMode={true}
-                grabCursor={true}
-                modules={[FreeMode][Controller]}
-                slidesPerView={3.5}
-                spaceBetween={15}
-              >
-              {
-                restaurantes!== false && (
-                    restaurantes.map((data, key)=>{
-                      return(
-                        <div key={key}>
-                          <SwiperSlide key={key}>
-                            <PlaceIcon img = {data.logo} text = {data.nome}/>
-                          </SwiperSlide>
-                        </div>
-                      );
-                    })
-                )
-              }
-              </Swiper>
-            </SwiperDiv>
-
-            <Title>
-              Atrações
-            </Title>
-            <SwiperDiv>
-            <Swiper
-                freeMode={true}
-                grabCursor={true}
-                modules={[FreeMode][Controller]}
-                slidesPerView={3.5}
-                spaceBetween={15}
-              >
-              {
-                atracoes!== false && (
-                    atracoes.map((data, key)=>{
-                      return(
-                        <div key={key}>
-                          <SwiperSlide key={key}>
-                            <PlaceIcon img = {data.logo} text = {data.nome}/>
-                          </SwiperSlide>
-                        </div>
-                      );
-                    })
-                )
-              }
-              </Swiper>
-            </SwiperDiv>
-
+            <SwiperDiv>    
             <Title>
               Hoteis
             </Title>
-            <SwiperDiv>
+
               <Swiper
                 freeMode={true}
                 grabCursor={true}
@@ -150,13 +106,135 @@ const PlacesSection = ({ text }) => {
               </Swiper>
             </SwiperDiv>
 
-            <Fixed>
-             <h1>
-              Hoteis
-             </h1>
+            <SwiperDiv>
+            <Title>
+              Atrações
+            </Title>
+            
+            <Swiper
+                freeMode={true}
+                grabCursor={true}
+                modules={[FreeMode][Controller]}
+                slidesPerView={3.5}
+                spaceBetween={15}
+              >
               {
-                hoteis!== false && (
-                    hoteis.map((data, key)=>{
+                atracoes!== false && (
+                    atracoes.map((data, key)=>{
+                      return(
+                        <div key={key}>
+                          <SwiperSlide key={key}>
+                            <PlaceIcon img = {data.logo} text = {data.nome}/>
+                          </SwiperSlide>
+                        </div>
+                      );
+                    })
+                )
+              }
+              </Swiper>
+            </SwiperDiv>
+
+          <SwiperDiv>
+            <Title>
+              Restaurantes
+            </Title>
+            
+            <Swiper
+                freeMode={true}
+                grabCursor={true}
+                modules={[FreeMode][Controller]}
+                slidesPerView={3.5}
+                spaceBetween={15}
+              >
+              {
+                restaurantes!== false && (
+                    restaurantes.map((data, key)=>{
+                      return(
+                        <div key={key}>
+                          <SwiperSlide key={key}>
+                            <PlaceIcon img = {data.logo} text = {data.nome}/>
+                          </SwiperSlide>
+                        </div>
+                      );
+                    })
+                )
+              }
+              </Swiper>
+            </SwiperDiv>
+
+            <SwiperDiv>
+            <Title>
+              Bares
+            </Title>
+            
+            <Swiper
+                freeMode={true}
+                grabCursor={true}
+                modules={[FreeMode][Controller]}
+                slidesPerView={3.5}
+                spaceBetween={15}
+              >
+              {
+                bares!== false && (
+                    bares.map((data, key)=>{
+                      return(
+                        <div key={key}>
+                          <SwiperSlide key={key}>
+                            <PlaceIcon img = {data.logo} text = {data.nome}/>
+                          </SwiperSlide>
+                        </div>
+                      );
+                    })
+                )
+              }
+              </Swiper>
+            </SwiperDiv>
+
+            <SwiperDiv>
+            <Title>
+              Eventos
+            </Title>
+            
+            <Swiper
+                freeMode={true}
+                grabCursor={true}
+                modules={[FreeMode][Controller]}
+                slidesPerView={3.5}
+                spaceBetween={15}
+              >
+              {
+                eventos!== false && (
+                    eventos.map((data, key)=>{
+                      return(
+                        <div key={key}>
+                          <SwiperSlide key={key}>
+                            <PlaceIcon img = {data.logo} text = {data.nome}/>
+                          </SwiperSlide>
+                        </div>
+                      );
+                    })
+                )
+              }
+              </Swiper>
+            </SwiperDiv>
+
+          
+
+          
+
+
+
+
+
+            <FixedContainer>
+             <Title>
+              Locais
+             </Title>
+
+             <Fixed>
+              {
+                locais!== false && (
+                    locais.map((data, key)=>{
                       return(
                         <div key={key}>
                           
@@ -168,6 +246,113 @@ const PlacesSection = ({ text }) => {
                 )
               }
             </Fixed>
+            </FixedContainer>
+
+            <FixedContainer>
+            <Title>
+              Hoteis
+            </Title>
+           <Fixed>
+              {
+                hoteis!== false && (
+                    hoteis.map((data, key)=>{
+                      return(
+                        <div key={key}>
+                            <PlaceIcon img = {data.logo} text = {data.nome}/>
+                        </div>
+                      );
+                    })
+                )
+              }
+            </Fixed>
+            </FixedContainer>
+
+            <FixedContainer>
+             <Title>
+              Atrações
+             </Title>
+
+             <Fixed>
+              {
+                atracoes!== false && (
+                    atracoes.map((data, key)=>{
+                      return(
+                        <div key={key}>
+                          <PlaceIcon img = {data.logo} text = {data.nome}/>
+                        </div>
+                      );
+                    })
+                )
+              }
+            </Fixed>
+            </FixedContainer>
+
+            <FixedContainer>
+             <Title>
+              Restaurantes
+             </Title>
+
+             <Fixed>
+              {
+                restaurantes!== false && (
+                    restaurantes.map((data, key)=>{
+                      return(
+                        <div key={key}>
+                          
+                          <PlaceIcon img = {data.logo} text = {data.nome}/>
+                          
+                        </div>
+                      );
+                    })
+                )
+              }
+            </Fixed>
+            </FixedContainer>
+
+            <FixedContainer>
+             <Title>
+              Bares
+             </Title>
+
+             <Fixed>
+              {
+                bares!== false && (
+                    bares.map((data, key)=>{
+                      return(
+                        <div key={key}>
+                          
+                          <PlaceIcon img = {data.logo} text = {data.nome}/>
+                          
+                        </div>
+                      );
+                    })
+                )
+              }
+            </Fixed>
+            </FixedContainer>
+
+            <FixedContainer>
+             <Title>
+              Eventos
+             </Title>
+
+             <Fixed>
+              {
+                eventos!== false && (
+                    eventos.map((data, key)=>{
+                      return(
+                        <div key={key}>
+                          
+                          <PlaceIcon img = {data.logo} text = {data.nome}/>
+                          
+                        </div>
+                      );
+                    })
+                )
+              }
+            </Fixed>
+            </FixedContainer>
+
         </>        
     )
 }

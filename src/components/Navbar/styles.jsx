@@ -22,7 +22,7 @@ export const Logo = styled.div`
     margin-left: 10vw;
 
     @media(max-width: 999px){
-        margin-left: 1.5vw;
+        display: none;
     }
 `;
 
@@ -57,6 +57,7 @@ export const Name = styled.p`
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: clamp(1vh + 0.5rem, 1rem + 2vh, 4vh);
+    margin-left: 10vw;
 
 `;
 

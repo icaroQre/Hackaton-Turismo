@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <Header>
             <Logo />
-            <Name> BandTour </Name>
+            <Name> LocalizaBand </Name>
             <MobileMenu 
             menuVisible = {menuVisible}
             setMenuVisible = {setMenuVisible} />

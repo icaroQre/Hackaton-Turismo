@@ -20,12 +20,10 @@ export const Title = styled.p`
     font-family: 'Maven Pro', sans-serif;
     font-weight: bold;
     font-size: clamp(1vh + 0.5rem, 1rem + 1.7vh, 4vh);
-    margin-top: 40px;
-    display: none;
+    margin-bottom: 40px;
     
     @media(max-width: 999px){
-        display: block;
-        margin-top: 80px;
+        margin-bottom: 80px;
         margin-left: 5vw;
     }
 `;
@@ -36,18 +34,31 @@ export const SwiperDiv = styled.div`
 
     @media (max-width: 999px){
         display: block;
-        margin-top: 80px;
+        margin-top: 200px;
     }
 `;
 
 export const Fixed = styled.div`
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+
+    @media (max-width: 999px){
+        display: none;
+    }
+`;
+
+export const FixedContainer = styled.div`
+
     max-width: 65vw;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
     @media (max-width: 999px){
         display: none;

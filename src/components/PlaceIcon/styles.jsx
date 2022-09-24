@@ -7,6 +7,7 @@ export const Container = styled.div`
     align-items: center;
     text-align: center;
     width: 90px;
+    padding-right: 3vw;
     
     @media (max-width: 999px){
         word-break: inherit;
