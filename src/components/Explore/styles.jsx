@@ -97,7 +97,7 @@ export const a = styled.div`
 export const Background = styled.div`
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 90vw;
     height: 38vh;
     align-items: center;
     justify-content: center;
@@ -108,6 +108,10 @@ export const Background = styled.div`
     background-size: 60vw;
     border-bottom: solid #E0E0E0 4px;
     transition: all 0.2s;
+    border-radius: 2rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 30px;
 
     @media (max-width: 999px){
       background-size: 200vw;

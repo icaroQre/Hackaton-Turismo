@@ -8,6 +8,11 @@ export const Container = styled.div`
     text-align: center;
     width: 90px;
     padding-right: 3vw;
+    transition: all 0.5s;
+
+    :hover{
+        transform: scale(125%);
+    }
     
     @media (max-width: 999px){
         word-break: inherit;
@@ -21,7 +26,7 @@ export const Icon = styled.div`
     justify-content: center;
     height: 10vh;
     width: 10vh;
-    border-radius: 50%;
+    border-radius: 2rem;
     background-color: whitesmoke;
     color: black;
     overflow: hidden; 

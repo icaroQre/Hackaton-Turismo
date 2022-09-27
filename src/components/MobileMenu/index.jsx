@@ -1,5 +1,6 @@
 import React from "react";
 import { Menu, MenuList } from "./styles"
+import { Link } from 'react-router-dom'
 
 const MobileMenu = ({ menuVisible, setMenuVisible }) => {
 
@@ -16,10 +17,10 @@ const MobileMenu = ({ menuVisible, setMenuVisible }) => {
                 <div></div>
             </Menu>
             <MenuList visible = {menuVisible}>
-                <li><a href="/">Cidades</a></li>
-                <li><a href="/">Sobre nós</a></li>
-                <li><a href="/login">Entrar</a></li>
-                <li><a href="/register">Cadastrar</a></li>
+                <Link className="menuMobileHover" to="/"><div>Cidades</div></Link>
+                <Link className="menuMobileHover" to="/"><div>Sobre nós</div></Link>
+                <Link className="menuMobileHover" to="/register"><div>Entrar</div></Link>
+                <Link className="menuMobileHover" to="/login"><div>Cadastrar</div></Link>
             </MenuList>
         </>
     )

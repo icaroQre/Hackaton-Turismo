@@ -195,7 +195,7 @@ const PlacesSection = ({ text }) => {
 
       <FixedContainer id="fixed-locais">
         <Title>
-          Locais
+          Conheça Bandeirantes
         </Title>
 
         <Fixed>
