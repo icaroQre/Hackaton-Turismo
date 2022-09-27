@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Bar = styled.input`
+import backgroundImg3 from '../images/back3.jpg'
+
+export const Input = styled.input`
 
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
@@ -42,4 +44,56 @@ export const ExploreBar = styled.div`
     display: flex;
     align-items: center;
     justify-content: end;
+`;
+
+export const DataResult = styled.div`
+  margin-top: 2px;
+  width: 77vh;
+  height: 50px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: hidden;
+`;
+
+export const p = styled.p`
+    margin-left: 10px;
+    &:hover{
+    background-color: lightgray;
+  }
+  transition: all ease 0.4s
+`;
+
+export const a = styled.div`
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+  &:hover{
+    background-color: lightgray;
+  }
+  transition: all ease 0.4s;
+`;
+
+
+export const Background = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 38vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(${backgroundImg3});
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #fed300;
+    background-size: 60vw;
+    border-bottom: solid #E0E0E0 4px;
+    transition: all 0.2s;
+
+    @media (max-width: 999px){
+      background-size: 200vw;
+    }
 `;
