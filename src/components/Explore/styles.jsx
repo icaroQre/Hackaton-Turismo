@@ -48,20 +48,38 @@ export const ExploreBar = styled.div`
 
 export const DataResult = styled.div`
   margin-top: 2px;
-  width: 77vh;
-  height: 50px;
+  border: 0 none;
+  outline: 0;
+  width: 70vw;
+  max-width: 700px;
+  height: 6vh;
+  max-height: 50px;
   border-radius: 15px;
+  font-size: clamp(0.2rem, 1rem + 1vh, 2vh);
+  font-family: 'Maven Pro', sans-serif;
+  padding: 0px 30px 0px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   overflow-y: hidden;
+  transition: all 0.2s;
+  &:hover{
+    background-color: lightgray;
+  }
+  ::placeholder{
+        font-family: 'Maven Pro', sans-serif;
+        font-size: clamp(0.2rem, 1rem + 1vh, 2vh);
+    }
+
+    @media (max-width: 999px){
+        ::placeholder{
+            font-size: clamp( 1vh, 2vh);
+            }
+    }
 `;
 
 export const p = styled.p`
-    margin-left: 10px;
-    &:hover{
-    background-color: lightgray;
-  }
+  margin-left: 10px;
   transition: all ease 0.4s
 `;
 
@@ -71,10 +89,8 @@ export const a = styled.div`
   display: flex;
   align-items: center;
   color: black;
-  &:hover{
-    background-color: lightgray;
-  }
   transition: all ease 0.4s;
+  margin-bottom: 10px;
 `;
 
 
