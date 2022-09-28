@@ -19,8 +19,8 @@ const MobileMenu = ({ menuVisible, setMenuVisible }) => {
             <MenuList visible = {menuVisible}>
                 <Link className="menuMobileHover" to="/"><div>Cidades</div></Link>
                 <Link className="menuMobileHover" to="/sobre"><div>Sobre nós</div></Link>
-                <Link className="menuMobileHover" to="/register"><div>Entrar</div></Link>
-                <Link className="menuMobileHover" to="/login"><div>Cadastrar</div></Link>
+                <Link className="menuMobileHover" to="/login"><div>Entrar</div></Link>
+                <Link className="menuMobileHover" to="/register"><div>Cadastrar</div></Link>
             </MenuList>
         </>
     )

@@ -11,7 +11,7 @@ const Login = () => {
     <>
       <BackButton />
       <div style={{ display: 'flex', flexDirection: "column", alignItems: "center" }}>
-        <div style={{ marginTop: "0.5vh" }}> <img src={logo} alt="Logo Hackaton-Turismo" style={{ height: "25vh", width: "25vh", }} /> </div>
+        <div style={{ marginTop: "0.5vh" }}> <img src={logo} alt="Logo Hackaton-Turismo" style={{ height: "25wh", width: "25vh", }} /> </div>
         <Conteiner />
         <LoginButtons />
         <GlobalStyles />
