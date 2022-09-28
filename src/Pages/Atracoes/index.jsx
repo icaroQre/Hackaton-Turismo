@@ -45,7 +45,7 @@ const Atracoes = () => {
         <a href={place.face}><BsFacebook color="black" size={60}/></a>
         <a href={place.insta}><AiFillInstagram color="black" size={65}/></a>
         <a href={place.whats}><RiWhatsappFill color="black" size={65}/></a>
-        <a href={place.whats}><FaMapMarkerAlt color="black" size={65}/></a>
+        <a href={place.maps}><FaMapMarkerAlt color="black" size={65}/></a>
       </Icons>
     </Section>
     </Bg>
