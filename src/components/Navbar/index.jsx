@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import {Header, Logo, NavList, Name, Cadastrar } from './styles';
+import {Header, Logo, NavList, Name, Cadastrar, Logo2 } from './styles';
 import MobileMenu from "../MobileMenu";
 import { Link } from 'react-router-dom';
 
@@ -13,7 +13,9 @@ const Navbar = () => {
             <Link to="/details">
                 <Logo />
             </Link>
-            <Name><Link className="link" to="/"> LocalizaBand </Link></Name>
+            <Link className="link" to="/">
+                <Logo2/>
+            </Link>
             <MobileMenu
             menuVisible = {menuVisible}
             setMenuVisible = {setMenuVisible} />

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import logo from '../images/logo.png'
+import logo from '../images/logo-localize-preto.png'
+import escrito from '../images/localize-escrito.png'
 
 export const Header = styled.div`
     height: 12vh;
@@ -17,12 +18,13 @@ export const Header = styled.div`
 `;
 
 export const Logo = styled.div`
-    height: 10vh;
-    width: 10vh;
+    height: 8vh;
+    width: 8vh;
     border-radius: 100px;
     overflow: hidden;
     background-image: url(${logo});
-    background-size: 10vh;
+    background-size: 8vh;
+    background-repeat: no-repeat;
     margin-left: 10vw;
 
     @media(max-width: 999px){
@@ -100,5 +102,20 @@ export const Cadastrar = styled.li`
 
     :hover{
         background-color: #fed300;
+    }
+`;
+
+export const Logo2 = styled.div`
+    height: 20vh;
+    width: 20vh;
+    border-radius: 100px;
+    overflow: hidden;
+    background-image: url(${escrito});
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    margin-left: 10vw;
+
+    @media(max-width: 999px){
+        display: none;
     }
 `;
