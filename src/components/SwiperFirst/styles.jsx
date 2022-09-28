@@ -22,4 +22,10 @@ export const Fixed = styled.div`
     @media (max-width: 999px){
         display: none;
     }
+
+.fixedHover{
+    :hover{
+        background-color: blue;
+    }
+}
 `;

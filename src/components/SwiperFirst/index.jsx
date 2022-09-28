@@ -20,6 +20,7 @@ import { GiPartyPopper } from 'react-icons/gi'
 
 const SwiperFirst = () => {
 
+
     return(
       <>
         <SwiperDiv>
@@ -31,7 +32,7 @@ const SwiperFirst = () => {
             spaceBetween={15}
             >
     
-            <SwiperSlide>
+            <SwiperSlide >
             <Link to="hoteis" smooth={ true }offset={ -50 } duration={ 800 } >
               <SfIcons img = <MdHotel size={35}/> text = 'Hoteis'/>
             </Link>

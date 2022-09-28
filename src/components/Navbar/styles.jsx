@@ -7,9 +7,12 @@ export const Header = styled.div`
     max-width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: white;
     z-index: 5;
+
+    @media (min-width: 999px){
+        justify-content: space-between;
+    }
 `;
 
 export const Logo = styled.div`
@@ -64,8 +67,14 @@ export const Name = styled.p`
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: clamp(1vh + 0.5rem, 1rem + 2vh, 4vh);
-        margin-left: 10vw;
+        position: absolute;
+        left: 10vw;
+        top: 5vh;
         text-decoration: none;
+
+        @media (min-width: 999px){
+        position: static;
+    }
     }
 `;
 

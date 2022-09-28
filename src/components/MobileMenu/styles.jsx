@@ -4,13 +4,15 @@ export const Menu = styled.div`
 
     display: none;
     cursor: pointer;
-    margin-right: 10vw;
+    position: absolute;
+    right: 10vw;
+    top: 5vh;
 
     div{
-        width: 30px;
-        height: 5px;
+        width: 40px;
+        height: 8px;
         background-color: #263238;
-        margin: 5px;
+        margin: 8px;
         border-radius: 25px;
     }
 
@@ -31,7 +33,7 @@ export const MenuList = styled.ul`
     top: calc(12vh + 30px);
     right: 0;
     width: 0;
-    min-height: 88vh;
+    min-height: 58vh;
     background-color: whitesmoke;
     margin: 0;
     z-index: 5;
@@ -39,10 +41,26 @@ export const MenuList = styled.ul`
     pointer-events: none;
     transition: 0.5s;
     overflow-x: hidden;
+    padding-bottom: 30vh;
 
-    li {
+    .menuMobileHover{
+
+        transition: all 0.5s;
+        width: 100%;
+
+        :hover{
+            background-color: lightgray;
+        }
+    }
+
+    div {
         margin-left: 0;
-        letter-spacing: 3px;
+        letter-spacing: 1.5px;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     a{
@@ -61,6 +79,6 @@ export const MenuList = styled.ul`
         justify-content: space-around;
         opacity: 1;
         pointer-events: auto;
-        width: 50vw;
+        width: 45vw;
     `}
 `;
