@@ -63,23 +63,6 @@ export const NavList = styled.ul`
     }
 `;
 
-export const Name = styled.p`
-
-    .link{
-        color: #101010;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: clamp(1vh + 0.5rem, 1rem + 2vh, 4vh);
-        position: absolute;
-        left: 10vw;
-        top: 5vh;
-        text-decoration: none;
-
-        @media (min-width: 999px){
-        position: static;
-    }
-    }
-`;
 
 export const Cadastrar = styled.li`
     display: flex;
@@ -114,8 +97,4 @@ export const Logo2 = styled.div`
     background-size: 20vh;
     background-repeat: no-repeat;
     margin-left: 10vw;
-
-    @media(max-width: 999px){
-        display: none;
-    }
 `;

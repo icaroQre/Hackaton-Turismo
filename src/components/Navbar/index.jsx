@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import {Header, Logo, NavList, Name, Cadastrar, Logo2 } from './styles';
+import {Header, Logo, NavList, Cadastrar, Logo2 } from './styles';
 import MobileMenu from "../MobileMenu";
 import { Link } from 'react-router-dom';
 
