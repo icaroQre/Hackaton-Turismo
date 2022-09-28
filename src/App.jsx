@@ -4,6 +4,7 @@ import Login from './Pages/Login/Login';
 import Home from './Pages/Home/Home';
 import Register from './Pages/Register/Register'
 import Details from "./Pages/Details/Details";
+import Footer from "./components/Footer";
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/register" element = {<Register/>} />
         <Route exact path="/details" element = {<Details/>} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

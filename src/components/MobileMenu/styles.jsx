@@ -25,7 +25,7 @@ export const MenuList = styled.ul`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
     position: absolute;
     top: calc(12vh + 30px);
