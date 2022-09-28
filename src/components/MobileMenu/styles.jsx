@@ -51,6 +51,10 @@ export const MenuList = styled.ul`
         :hover{
             background-color: lightgray;
         }
+
+        .cadastrar{
+            color: #1F75FE;
+        }
     }
 
     div {

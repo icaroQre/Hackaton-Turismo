@@ -2,7 +2,6 @@ import React from 'react'
 import * as C from './styles'
 
 import Navbar from '../../components/Navbar';
-import Footer from "../../components/Footer"
 import BackButton from '../../components/BackButton';
 
 const Sobre = () => {
@@ -18,7 +17,6 @@ const Sobre = () => {
                 <C.t2>Nosso maior comprometimento é criar um ambiente seguro e de simples utilização, onde encontrar um lugar perfeito é simples e rapido.</C.t2>
                 <C.t2></C.t2>
             </C.texto>
-            <Footer />
         </C.tela>
 
     )
