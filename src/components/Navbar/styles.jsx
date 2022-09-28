@@ -96,5 +96,14 @@ export const Logo2 = styled.div`
     background-image: url(${escrito});
     background-size: 20vh;
     background-repeat: no-repeat;
-    margin-left: 10vw;
+    margin-left: 6vw;
+
+    @media (max-width: 999px){
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 13vh;
+        width: 13vh;
+        background-size: 13vh;
+    }
 `;
