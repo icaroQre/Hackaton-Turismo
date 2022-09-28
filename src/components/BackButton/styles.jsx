@@ -14,7 +14,7 @@ export const Btn = styled.button`
     transition: all 0.5s;
     cursor: pointer;
     position: absolute;
-    top: 40px;
+    top: 20px;
     left: 20px;
 
 
