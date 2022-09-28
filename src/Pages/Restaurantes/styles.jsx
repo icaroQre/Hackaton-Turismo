@@ -7,10 +7,8 @@ export const Container = styled.div`
     overflow-x: hidden;
     padding-top: 5vh;
     border-radius: 2rem;
-    width: 90vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
 `;
 
 export const Description = styled.div`
@@ -57,7 +55,7 @@ export const Description = styled.div`
         color: #263238;;
         font-family: 'Maven Pro', sans-serif;
         font-weight: 500;
-        font-size: clamp(1vh + 0.5rem, 1rem + 1.2vh, 2.5vh);
+        font-size: clamp(1vh + 0.5rem, 1rem + 1.2vh, 2vh);
         word-break: inherit;
         margin-bottom: 5vh;
     }
@@ -67,22 +65,10 @@ export const Description = styled.div`
         color: #263238;
         font-family: 'Maven Pro', sans-serif;
         font-weight: 500;
-        font-size: clamp(1vh + 0.5rem, 1rem + 1.2vh, 3vh);
+        font-size: clamp(0.5vh + 0.5rem, 1rem + 1vh, 1.8vh);
         word-break: keep-all;
     }
 
-`;
-
-export const Image = styled.div`
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20vh;
-    width: 20vh;
-    margin-top: 3vh;
-    border-radius: 2rem;
-    margin-left: 10vw;
 `;
 
 export const Icons = styled.div`
@@ -92,7 +78,23 @@ export const Icons = styled.div`
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10vh;
+    margin-top: 5vh;
     max-width: 400px;
-    margin-bottom: 5vh;
+`;
+
+export const Section = styled.div`
+
+    padding-bottom: 5vh;
+    width: 90vw;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+    background-color: white;
+`;
+
+export const Bg = styled.div`
+    background-color: #fec300;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
 `;
