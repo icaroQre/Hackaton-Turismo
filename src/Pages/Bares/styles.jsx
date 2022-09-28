@@ -15,7 +15,7 @@ export const Container = styled.div`
 
 export const Description = styled.div`
 
-    max-width: 1080px;
+    max-width: 700px;
 
     div{
         display: flex;
@@ -57,7 +57,7 @@ export const Description = styled.div`
         color: #263238;;
         font-family: 'Maven Pro', sans-serif;
         font-weight: 500;
-        font-size: clamp(1vh + 0.5rem, 1rem + 1.2vh, 3vh);
+        font-size: clamp(1vh + 0.5rem, 1rem + 1.2vh, 2.5vh);
         word-break: inherit;
         margin-bottom: 5vh;
     }
@@ -94,4 +94,5 @@ export const Icons = styled.div`
     margin-right: auto;
     margin-top: 10vh;
     max-width: 400px;
+    margin-bottom: 5vh;
 `;

@@ -14,12 +14,12 @@ const Navbar = () => {
                 <Logo />
             </Link>
             <Name><Link className="link" to="/"> LocalizaBand </Link></Name>
-            <MobileMenu 
+            <MobileMenu
             menuVisible = {menuVisible}
             setMenuVisible = {setMenuVisible} />
             <NavList>
                 <li><Link className="a" to="/">Cidades</Link></li>
-                <li><Link className="a" to="/">Sobre nós</Link></li>
+                <li><Link className="a" to="/sobre">Sobre nós</Link></li>
                 <li><Link className="a" to="/login">Entrar</Link></li>
                 <Cadastrar><Link to="/register">Cadastrar</Link></Cadastrar>
             </NavList>

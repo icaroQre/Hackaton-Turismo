@@ -7,6 +7,7 @@ import Hoteis from "./Pages/Hoteis";
 import Atracoes from "./Pages/Atracoes";
 import Bares from "./Pages/Bares";
 import Restaurantes from "./Pages/Restaurantes";
+import Sobre from "./Pages/Sobre"
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/atracoes/:id" element = {<Atracoes/>} />
         <Route exact path="/bares/:id" element = {<Bares/>} />
         <Route exact path="/restaurantes/:id" element = {<Restaurantes/>} />
+        <Route exact path="/sobre" element = {<Sobre/>} />
       </Routes>
     </BrowserRouter>
   );

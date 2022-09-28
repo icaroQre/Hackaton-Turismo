@@ -36,13 +36,14 @@ const Hoteis = () => {
           <p className="description">{place.descricao}</p>
           <p className="price">Faixa de preço: {place.preco}</p>
           <p className="price">Telefone: {place.telefone}</p>
+          <p className="price">Endereço: {place.endereco}</p>
         </Description>
       </Container>
       <Icons>
-        <MdEmail size={80}/>
-        <BsFacebook size={80}/>
-        <AiFillInstagram size={80}/>
-        <RiWhatsappFill size={80}/>
+        <MdEmail size={65}/>
+        <BsFacebook size={65}/>
+        <AiFillInstagram size={65}/>
+        <RiWhatsappFill size={65}/>
       </Icons>
     </>
     )
