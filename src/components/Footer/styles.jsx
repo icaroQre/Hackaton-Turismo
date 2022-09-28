@@ -2,7 +2,7 @@ import styled from "styled-components";
 import logo from '../images/logo.png'
 
 export const Container = styled.div`
-    
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: start;
