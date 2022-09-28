@@ -5,4 +5,5 @@ export const Container = styled.div`
     width: 100vw;
     height: 80px;
     background-color: blue;
+    margin-top: 4vh;
 `;

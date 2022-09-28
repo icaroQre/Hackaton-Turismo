@@ -3,8 +3,8 @@ import Navbar from '../../components/Navbar';
 import SwiperFirst from "../../components/SwiperFirst";
 import GlobalStyles from '../../styles/GlobalStyles';
 import Reset from '../../styles/Reset';
-import PlacesSection from "../../components/PlacesSection";
 import Explore from "../../components/Explore"
+import PlaceSection from "../../components/PlaceSection";
 
 function Home() {
   return (
@@ -15,7 +15,7 @@ function Home() {
       <Explore/>
       <SwiperFirst style={{paddingBottom: "80px",
       borderBottom: "solid #E0E0E0 4px"}}/>
-      <PlacesSection/>
+      <PlaceSection />
     </>
   );
 }

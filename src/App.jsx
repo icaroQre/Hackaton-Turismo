@@ -3,8 +3,10 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Login from './Pages/Login/Login';
 import Home from './Pages/Home/Home';
 import Register from './Pages/Register/Register'
-import Details from "./Pages/Details/Details";
-import Footer from "./components/Footer";
+import Hoteis from "./Pages/Hoteis";
+import Atracoes from "./Pages/Atracoes";
+import Bares from "./Pages/Bares";
+import Restaurantes from "./Pages/Restaurantes";
 
 
 
@@ -17,9 +19,11 @@ function App() {
         <Route exact path="/" element = {<Home/>} />
         <Route exact path="/login" element = {<Login/>} />
         <Route exact path="/register" element = {<Register/>} />
-        <Route exact path="/details" element = {<Details/>} />
+        <Route exact path="/hoteis/:id" element = {<Hoteis/>} />
+        <Route exact path="/atracoes/:id" element = {<Atracoes/>} />
+        <Route exact path="/bares/:id" element = {<Bares/>} />
+        <Route exact path="/restaurantes/:id" element = {<Restaurantes/>} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

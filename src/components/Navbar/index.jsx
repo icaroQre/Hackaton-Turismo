@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <Header>
-            <Link to="/">
+            <Link to="/details">
                 <Logo />
             </Link>
             <Name><Link className="link" to="/"> LocalizaBand </Link></Name>

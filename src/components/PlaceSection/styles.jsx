@@ -32,8 +32,6 @@ export const SwiperDiv = styled.div`
 
     display: none;
 
-    
-
     @media (max-width: 999px){
         display: block;
         margin-top: 200px;
