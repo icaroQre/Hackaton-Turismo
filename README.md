@@ -1,4 +1,4 @@
-# Projeto turismo em ReactJS :triangular_flag_on_post:
+# Projeto de turismo em ReactJS :triangular_flag_on_post:
 
 Esse foi meu primeiro projeto desenvolvido em ReactJS para o primeiro hackaton que participei.
 
